@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/home_title_m_t"
+                android:layout_marginTop="@dimen/home_title_m_t"
+                android:layout_marginRight="@dimen/home_title_m_t"
+                android:layout_marginBottom="@dimen/gallery_margin_l_r"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/video"
+                android:textColor="@color/title"
+                android:textSize="@dimen/profile_title"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_video"
+                android:layout_marginLeft="@dimen/home_title_m_t"
+                android:layout_marginRight="@dimen/home_title_m_t"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:id="@+id/frame_video"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layoutAnimation="@anim/layout_animation_list">
+
+                        <VideoView
+                            android:id="@+id/video"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/video_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_video"
+                        android:layout_marginLeft="@dimen/gallery_margin_l_r"
+                        android:layout_marginTop="@dimen/gallery_margin_t"
+                        android:layout_marginRight="@dimen/gallery_margin_l_r"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/gbbbb"
+                        android:textColor="@color/title"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/video_artist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/video_title"
+                        android:layout_marginLeft="@dimen/gallery_margin_l_r"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="@dimen/gallery_margin_l_r"
+                        android:layout_marginBottom="@dimen/gallery_margin_l_r"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="@string/artist"
+                        android:textColor="@color/title"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/text_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_video"
+                android:layout_marginLeft="@dimen/home_title_m_t"
+                android:layout_marginTop="@dimen/home_title_m_t"
+                android:layout_marginRight="@dimen/home_title_m_t"
+                android:layout_marginBottom="@dimen/gallery_margin_l_r"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/music"
+                android:textColor="@color/title"
+                android:textSize="@dimen/profile_title"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/music_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_music"
+                android:layout_marginLeft="@dimen/home_title_m_t"
+                android:layout_marginRight="@dimen/home_title_m_t"
+                android:layout_marginBottom="@dimen/home_title_m_t"
+                app:cardBackgroundColor="@color/title"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.github.siyamed.shapeimageview.CircularImageView
+                        android:id="@+id/music_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/home_title_m_t" />
+
+                    <TextView
+                        android:id="@+id/music_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/music_img"
+                        android:layout_marginTop="@dimen/home_title_m_t"
+                        android:fontFamily="@font/roboto_light"
+                        android:gravity="center_horizontal"
+                        android:textColor="#fff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/music_artist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/music_title"
+                        android:layout_marginTop="@dimen/gallery_margin_t"
+                        android:fontFamily="@font/roboto_light"
+                        android:gravity="center_horizontal"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@+id/play"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/music_artist"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/home_title_m_t"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/home_title_m_t"
+                        android:src="@drawable/ic_play"
+                        android:tint="#fafafa"
+                        android:contentDescription="@string/video" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/music_card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/music_card"
+                android:layout_marginLeft="@dimen/home_title_m_t"
+                android:layout_marginRight="@dimen/home_title_m_t"
+                android:layout_marginBottom="@dimen/home_title_m_t"
+                app:cardBackgroundColor="@color/splashscreen_end"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.github.siyamed.shapeimageview.CircularImageView
+                        android:id="@+id/music_img2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/home_title_m_t" />
+
+                    <TextView
+                        android:id="@+id/music_title2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/music_img2"
+                        android:layout_marginTop="@dimen/home_title_m_t"
+                        android:fontFamily="@font/roboto_light"
+                        android:gravity="center_horizontal"
+                        android:textColor="#fff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/music_artist2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/music_title2"
+                        android:layout_marginTop="@dimen/gallery_margin_t"
+                        android:fontFamily="@font/roboto_light"
+                        android:gravity="center_horizontal"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@+id/play2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/music_artist2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/home_title_m_t"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/home_title_m_t"
+                        android:src="@drawable/ic_play"
+                        android:tint="#fafafa"
+                        android:contentDescription="@string/music" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

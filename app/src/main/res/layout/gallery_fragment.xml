@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/gallery_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/gallery_margin_l_r"
+                android:layout_marginLeft="@dimen/gallery_margin_l_r"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/collection"
+                android:textColor="@color/title"
+                android:textSize="@dimen/gallery_title"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gallery_title"
+                android:layout_marginStart="@dimen/gallery_margin_l_r"
+                android:layout_marginLeft="@dimen/gallery_margin_l_r"
+                android:clipToPadding="false"
+                android:layoutAnimation="@anim/layout_animation_list"/>
+
+            <TextView
+                android:id="@+id/gallery_title_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycler_gallery"
+                android:layout_marginStart="@dimen/gallery_margin_l_r"
+                android:layout_marginLeft="@dimen/gallery_margin_l_r"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/mycollect"
+                android:textColor="@color/title"
+                android:textSize="@dimen/gallery_title"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_gallery_collection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gallery_title_collect"
+                android:layout_marginLeft="@dimen/gallery_margin_l_r"
+                android:layout_marginRight="@dimen/gallery_margin_l_r"
+                android:clipToPadding="false"
+                android:layoutAnimation="@anim/layout_animation_list"/>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

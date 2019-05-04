@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#34495e</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="appbar_color">#34495e</color>
+    <color name="title">#3F4448</color>
+    <color name="description">#7A8893</color>
+
+    <!--Splashscreen-->
+
+    <color name="splashscreen_start">#348AC7</color>
+    <color name="splashscreen_end">#7474BF</color>
+    <color name="bottomnav">#f5f4fa</color>
+
+
+
+</resources>

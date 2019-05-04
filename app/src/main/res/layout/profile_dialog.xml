@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splashscreen_end">
+
+    <ImageView
+        android:id="@+id/dialog_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close"
+        android:layout_marginTop="@dimen/gallery_margin_t"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/gallery_margin_l_r"
+        android:layout_marginEnd="@dimen/gallery_margin_l_r"/>
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/dialog_close"
+        android:layout_marginTop="@dimen/gallery_margin_t"
+        android:fontFamily="@font/roboto_regular"
+        android:text="NosaApps"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:id="@+id/dialog_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/home_title_m_t"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/dialog_title"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/dialog_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/dialog_image"
+        android:layout_marginTop="@dimen/gallery_margin_t"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Version 1.0"
+        android:textAlignment="center"
+        android:paddingBottom="@dimen/gallery_margin_l_r"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

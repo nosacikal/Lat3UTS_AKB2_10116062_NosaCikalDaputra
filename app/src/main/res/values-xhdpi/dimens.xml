@@ -1,0 +1,26 @@
+<resources>
+	<!--Home Fragment-->
+	<dimen name="home_img_m_t">32dp</dimen>
+	<dimen name="home_title_m_t">24dp</dimen>
+	<dimen name="home_title_t_s">24sp</dimen>
+	<dimen name="home_kota_t_s">14sp</dimen>
+	<dimen name="home_desc_m_l_m_r">44dp</dimen>
+	<dimen name="home_desc_m_t">16dp</dimen>
+	<dimen name="home_desc_t_s">14sp</dimen>
+
+    <!--Gallery Fragment-->
+    <dimen name="gallery_margin_l_r">16dp</dimen>
+    <dimen name="gallery_margin_t">8dp</dimen>
+    <dimen name="gallery_title">28sp</dimen>
+    <dimen name="gallery_photo_title">16sp</dimen>
+    <dimen name="gallery_photo_desc">12sp</dimen>
+
+
+	<dimen name="profile_title">18sp</dimen>
+	<dimen name="profile_m_r_l">18dp</dimen>
+
+	<dimen name="profile_h">244dp</dimen>
+
+
+
+</resources>

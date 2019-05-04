@@ -1,0 +1,18 @@
+<resources>
+	<dimen name="home_title_m_t">16dp</dimen>
+	<dimen name="home_title_t_s">16sp</dimen>
+	<dimen name="home_kota_t_s">9.3sp</dimen>
+	<dimen name="home_desc_m_l">36dp</dimen>
+	<dimen name="home_desc_m_l_m_r">29.3dp</dimen>
+	<dimen name="home_img_m_t">21.3dp</dimen>
+	<dimen name="gallery_title">18.7sp</dimen>
+	<dimen name="gallery_margin_l_r">10.7dp</dimen>
+	<dimen name="gallery_margin_t">5.3dp</dimen>
+	<dimen name="gallery_photo_desc">8sp</dimen>
+	<dimen name="gallery_photo_title">10.7sp</dimen>
+	<dimen name="home_desc_t_s">10.7sp</dimen>
+	<dimen name="profile_background">166.7dp</dimen>
+	<dimen name="profile_title">12sp</dimen>
+	<dimen name="profile_m_r_l">12dp</dimen>
+	<dimen name="profile_h">162.7dp</dimen>
+</resources>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Nosa Apps</string>
+    <string name="collection">Recent \nList</string>
+
+    <!--Splashscreen-->
+    <string name="img_splash">Splashscreen</string>
+
+    <!--Activity Daily-->
+    <string name="friend_list">Friend List</string>
+    <string name="daily_activity">Daily Activity</string>
+
+    <!--Gallery-->
+    <string name="mycollect">My Collection</string>
+
+    <!--Music Video-->
+    <string name="music">Music Favorite</string>
+    <string name="video">Video Favorite</string>
+    <string name="gbbbb">Grand Beatbox Wildcard 2017</string>
+    <string name="artist">Slizzer</string>
+
+    <!--Profile-->
+    <string name="background_profile">Background</string>
+    <string name="phone">phone</string>
+    <string name="email">email</string>
+    <string name="twitter">twitter</string>
+</resources>
