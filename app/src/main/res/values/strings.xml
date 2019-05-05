@@ -23,4 +23,6 @@
     <string name="phone">phone</string>
     <string name="email">email</string>
     <string name="twitter">twitter</string>
+    <string name="location">My Location</string>
+    <string name="version">version</string>
 </resources>
