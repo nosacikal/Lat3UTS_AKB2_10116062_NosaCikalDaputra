@@ -13,6 +13,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layoutAnimation="@anim/layout_animation_list"
             android:paddingBottom="@dimen/home_title_m_t">
 
             <com.github.florent37.diagonallayout.DiagonalLayout
